@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+  color: white;
+  background-color: #000000;
+}
+
+.calculater {
+  background-color: rgb(44, 43, 43);
+  width: 325px;
+  min-height: 500px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.display {
+  height: 150px;
+  text-align: right;
+  padding: 25px;
+  overflow: hidden;
+}
+
+#equBox {
+  margin-top: 15px;
+  font-size: 28px;
+  word-wrap: break-word;
+}
+
+#resBox {
+  font-size: 18px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+.keypad {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px;
+}
+#yellow-btn {
+    background-color: #ffaa00 !important;
+    color: white;
+}
+
+.keypad > button {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: black;
+  color: rgb(247, 242, 242);
+}
+@media screen and (max-width: 400px) {
+  .main {
+    padding: 10px;
+  }
+  .calculater {
+    width: 100%;
+    max-width: 325px;
+  }
+  .keypad {
+    gap: 6px;
+  }
+  .keypad > button {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .keypad > button {
+    width: 50px;
+    height: 50px;
+  }
+  .calculater {
+    padding: 5px;
+    min-height: 400px;
+  }
+  .keypad {
+    gap: 5px;
+  }
+}
